@@ -1,8 +1,16 @@
 import { CityActivityGuide } from "./types";
 import { denverHiking } from "./guides/denver-hiking";
+import { denverGolf } from "./guides/denver-golf";
+import { denverRockClimbing } from "./guides/denver-rock-climbing";
+import { denverCycling } from "./guides/denver-cycling";
+import { denverRunning } from "./guides/denver-running";
 
 const guides: Record<string, CityActivityGuide> = {
   "denver/hiking": denverHiking,
+  "denver/golf": denverGolf,
+  "denver/rock-climbing": denverRockClimbing,
+  "denver/cycling": denverCycling,
+  "denver/running": denverRunning,
 };
 
 export function getGuide(
